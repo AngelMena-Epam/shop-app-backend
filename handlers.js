@@ -3,10 +3,10 @@ const products = [
     { id: 2, name: 'Mango', price: 10 },
     { id: 3, name: 'Kiwi', price: 10 },
     { id: 4, name: 'Strawberry/BlueBerry', price: 15 },
-    { id: 3, name: 'Strawberry/Kiwi', price: 15 },
-    { id: 3, name: 'Mint/Lemon/Ginger', price: 20 },
-    { id: 3, name: 'Strawberry/Orange/Mango', price: 20 },
-    { id: 3, name: 'Strawberry/Banana/Almond Milk', price: 20 },
+    { id: 5, name: 'Strawberry/Kiwi', price: 15 },
+    { id: 6, name: 'Mint/Lemon/Ginger', price: 20 },
+    { id: 7, name: 'Strawberry/Orange/Mango', price: 20 },
+    { id: 8, name: 'Strawberry/Banana/Almond Milk', price: 20 },
   ];
   
   module.exports.getProductsList = async (event) => {
