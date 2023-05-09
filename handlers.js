@@ -12,6 +12,10 @@ const products = [
   module.exports.getProductsList = async (event) => {
     return {
       statusCode: 200,
+      headers: { 
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*' // replace with hostname of frontend (CloudFront)
+      },
       body: JSON.stringify(products),
     };
   };
@@ -23,12 +27,20 @@ const products = [
     if (!product) {
       return {
         statusCode: 404,
+        headers: { 
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*' // replace with hostname of frontend (CloudFront)
+        },
         body: JSON.stringify({ error: 'Product not found' })
       };
     }
   
     return {
       statusCode: 200,
+      headers: { 
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*' // replace with hostname of frontend (CloudFront)
+      },
       body: JSON.stringify(product)
     };
   };
